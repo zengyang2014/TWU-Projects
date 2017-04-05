@@ -9,25 +9,15 @@ import junit.framework.TestSuite;
  */
 public class AppTest
         extends TestCase {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
+
     public AppTest(String testName) {
         super(testName);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
     public static Test suite() {
         return new TestSuite(AppTest.class);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
     protected App app;
 
     protected void setUp() {
@@ -78,5 +68,13 @@ public class AppTest
         String output = app.drawCenteredDiamondTriangle(givenNum);
 
         assertTrue(output.equals("  *  \n *** \n*****\n *** \n  *  \n"));
+    }
+
+    public void testDrawDiamondWithName() {
+        Integer givenNum = 3;
+        String givenName = "Bill";
+        String output = app.drawDiamondWithName(givenNum,  givenName);
+        System.out.println(output);
+        assertTrue(output.equals(" * \n***\nBill\n***\n * \n"));
     }
 }
