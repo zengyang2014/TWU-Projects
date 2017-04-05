@@ -1,10 +1,12 @@
 package org.yzeng.twu.triangle;
 
 /**
- * Hello world!
+ * Exercise of TWU
  */
 public class App {
     public static void main(String[] args) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        System.out.println(fizzBuzz.playGame());
         App app = new App();
 //        System.out.println(app.drawHorizontalLine(8));
 //        System.out.println(app.drawVerticalLine(8));
