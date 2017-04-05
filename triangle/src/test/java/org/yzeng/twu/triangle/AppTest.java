@@ -58,4 +58,11 @@ public class AppTest
 
         assertTrue(output.equals("*\n*\n*\n"));
     }
+
+    public void testDrawRightTriangle() {
+        Integer givenNum = 3;
+        String output = app.drawRightTriangle(givenNum);
+
+        assertTrue(output.equals("*\n**\n***\n"));
+    }
 }
