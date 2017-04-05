@@ -45,4 +45,11 @@ public class AppTest
 
         assertEquals(given,when);
     }
+
+    public void testDrawHorizontalLine() {
+        Integer givenNum = 8;
+        String output = app.drawHorizontalLine(givenNum);
+
+        assertTrue(output.equals("********"));
+}
 }

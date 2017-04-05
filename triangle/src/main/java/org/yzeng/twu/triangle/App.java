@@ -15,4 +15,12 @@ public class App
     public String printOneAsterisk() {
         return "*";
     }
+
+    public String drawHorizontalLine(Integer givenNum) {
+        String asterisks = "";
+        for(int i = 0; i < givenNum; i++) {
+            asterisks += "*";
+        }
+        return asterisks;
+    }
 }
