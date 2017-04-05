@@ -65,4 +65,11 @@ public class AppTest
 
         assertTrue(output.equals("*\n**\n***\n"));
     }
+
+    public  void testDrawCenteredTriangle() {
+        Integer givenNum = 3;
+        String output = app.drawCenteredTriangle(givenNum);
+
+        assertTrue(output.equals("  *  \n *** \n*****\n"));
+    }
 }
