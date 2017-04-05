@@ -1,13 +1,21 @@
 package org.yzeng.twu.triangle;
 
+import java.util.List;
+
 /**
  * Exercise of TWU
  */
 public class App {
     public static void main(String[] args) {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        System.out.println(fizzBuzz.playGame());
         App app = new App();
+        PrimeFactor primeFactor = new PrimeFactor(225);
+        primeFactor.generatePrimeFactors();
+        List<Integer> primeFactors = primeFactor.getPrimeFactors();
+        for(int i = 0; i < primeFactors.size(); i++) {
+            System.out.println(primeFactors.get(i));
+        }
+//        System.out.println(fizzBuzz.playGame());
 //        System.out.println(app.drawHorizontalLine(8));
 //        System.out.println(app.drawVerticalLine(8));
         System.out.println(app.drawCenteredDiamondTriangle(5));
